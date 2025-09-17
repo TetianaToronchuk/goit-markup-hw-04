@@ -17,13 +17,17 @@
   <link rel="stylesheet" href="./css/styles.css" />
 </head>
 <body>
+  <!-- backgrounds -->
+   <!-- <p class="bg">Lorem ipsum 
+    
+   </p> -->
     <!-- header-->
   <header class="page-header">
     <div class="container">
       <nav class="header-nav">
         <a class="header-logo" href="./index.html">Web<span class="logo-part">Studio</span></a>
         <ul class="nav-list">
-          <li><a class="nav-link" href="./index.html">Studio</a></li>
+          <li><a class="nav-link current" href="./index.html">Studio</a></li>
           <li><a class="nav-link" href="">Portfolio</a></li>
           <li><a class="nav-link" href="">Contacts</a></li>
         </ul>
@@ -36,47 +40,75 @@
       </address>
     </div>
   </header>
-
+ 
   <main>
     <!-- first section -->
+
     <section class="hero-section section">
+      <div class="hero-bg"></div>
       <div class="container">
+       <div class="linear"></div> 
         <h1 class="hero-title">Effective Solutions for Your Business</h1>
         <button class="hero-button" type="button">Order Service</button>
       </div>
     </section>
   <!-- second section-->
-    <section class="features-section section">
-        <div class="container">
-            <h2 class="visually-hidden">Features</h2>
-            <ul class="features-list">
-                <li class="feature-item">
-                    <h3 class="features-subtitle">Strategy</h3>
-                    <p class="features-text">
-                        Our goal is to identify the business problem to walk away with the perfect and creative solution.
-                    </p>
-                </li>
-                <li class="feature-item">
-                    <h3 class="features-subtitle">Punctuality</h3>
-                    <p class="features-text">
-                        Bring the key message to the brand's audience for the best price within the shortest possible time.
-                    </p>
-                </li>
-                <li class="feature-item">
-                    <h3 class="features-subtitle">Diligence</h3>
-                    <p class="features-text">
-                        Research and confirm brands with the strongest digital growth opportunities and minimize risk.
-                    </p>
-                </li>
-                <li class="feature-item">
-                    <h3 class="features-subtitle">Technologies</h3>
-                    <p class="features-text">
-                        Design practice focused on digital experiences. We bring forth a deep passion for problem-solving.
-                    </p>
-                </li>
-            </ul>
+
+  <section class="features-section section">
+    <div class="container">
+      <h2 class="visually-hidden">Features</h2>
+      <ul class="features-list">
+        <li class="feature-item">
+          <div class="feature-icon">
+          <svg class="icon" width="64" height="64">
+          <symbol id="icon-antenna-1" viewBox="0 0 32 32">
+          <use href="./images/icons.svg#icon-antenna-1"></use>
+          </svg>
         </div>
-    </section>
+        <h3 class="features-subtitle">Strategy</h3>
+          <p class="features-text">
+                Our goal is to identify the business problem to walk away with the perfect and creative solution.
+          </p>
+        </li>
+        <li class="feature-item">
+          <div class="feature-icon">
+          <svg class="icon" width="64" height="64">
+          <symbol id="icon-Vector" viewBox="0 0 31 32">
+          <use href="./images/icons.svg#icon-Vector"></use>
+          </svg>
+        </div>
+            <h3 class="features-subtitle">Punctuality</h3>
+            <p class="features-text">
+                 Bring the key message to the brand's audience for the best price within the shortest possible time.
+            </p>
+        </li>
+        <li class="feature-item">
+          <div class="feature-icon">
+          <svg class="icon" width="64" height="64">
+          <symbol id="icon-diagram-1" viewBox="0 0 32 32">
+          <use href="./images/icons.svg#icon-diagram-1"></use>
+          </svg>
+        </div>
+            <h3 class="features-subtitle">Diligence</h3>
+            <p class="features-text">
+                Research and confirm brands with the strongest digital growth opportunities and minimize risk.
+            </p>
+        </li>
+        <li class="feature-item">
+          <div class="feature-icon">
+          <svg class="icon" width="64" height="64">
+          <symbol id="icon-astronaut-1" viewBox="0 0 32 32">
+          <use href="./images/icons.svg#icon-astronaut-1"></use>
+          </svg>
+        </div>
+            <h3 class="features-subtitle">Technologies</h3>
+            <p class="features-text">
+                Design practice focused on digital experiences. We bring forth a deep passion for problem-solving.
+            </p>
+        </li>
+    </ul>
+</div>
+</section>
   <!-- third section -->
   <section class="team-section">
     <div class="container">
@@ -121,6 +153,7 @@
       <ul class="portfolio-list">
         <li class="portfolio-item">
           <img src="./images/bankingapp.jpg" alt="Banking App" width="360" />
+         <!-- p.bankingapp-item-text  -->
           <div class="card-content">
             <h3 class="card-title">Banking App</h3>
             <p class="card-text">App</p>
