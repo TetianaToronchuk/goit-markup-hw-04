@@ -161,29 +161,31 @@ background-color: #404bbf;
 .contacts-link:focus {
     color: #404bbf;
 }
-/* HERO SECTION */
+/*1 HERO SECTION */
 
 .hero-section {
     background-color: #2e2f42;
-    text-align: center;
-    position: relative;
-}
-.hero-section.hero-bg {
-   background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7),
     rgba(46, 47, 66, 0.7)), 
     url(../images/hero-bg.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    max-width: 1158px;
+    max-width: 1440px;
     margin: 0 auto;
     padding: 188px 0; 
-    /* position: absolute; */
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%; 
-} 
+    text-align: center;
+    position: relative;
+    }
+
+/* .hero-bg {
+   
+}  */
+.hero-conteiner {
+    position: relative;
+    z-index: 1;
+}
+
 .hero-title {
     font-size: 56px;
     line-height: 107%;
@@ -219,7 +221,7 @@ background-color: #404bbf;
 .hero-button:focus {
     background-color: #404bbf;
 }
- /* 1 SECTION FEATURES */ 
+ /* 2 SECTION FEATURES */ 
 
 .features-section {
     background-color: #fff;
@@ -233,16 +235,34 @@ background-color: #404bbf;
 .feature-item {
     flex-basis: calc((100% - 72px) / 4);
 }
+
 .feature-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 112px;
+  background-color: #f4f4fd;
+  border-radius: 4px;
+  border: 1px solid #8e8f99;
+  margin-bottom: 8px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+              box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.icon {
     display: block;
     width: 64px;
     height: 64px;
     margin-bottom: 32px;
     fill: #4d5ae5;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-        background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-        fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
-        box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.feature-item:hover .feature-icon,
+.feature-item:focus .feature-icon {
+  background-color: #404bbf;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.12),
+              0px 2px 4px rgba(0, 0, 0, 0.16),
+              0px 4px 16px rgba(0, 0, 0, 0.08);
 }
 .features-subtitle {
     font-weight: 500;
@@ -282,7 +302,7 @@ background-color: #404bbf;
     text-transform: capitalize;
     color: #2e2f42;
 }
-    /* 2 SECTION TEAM */
+    /* 3 SECTION TEAM */
 
 .team-section {
     background-color: #f4f4fd;
@@ -339,22 +359,49 @@ background-color: #404bbf;
     color: #434455;
     text-align: center;
 }
-.card-social {
+.social-list {
     margin-top: 24px;
     display: flex;
     justify-content: center;
     gap: 16px;
-    transition:  250ms cubic-bezier(0.4, 0, 0.2, 1),
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    /* transition:  250ms cubic-bezier(0.4, 0, 0.2, 1),
      background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
      fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
-     box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+     box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1); */
 }
-/* .card-social:hover .icon-social, */
-.card-social .icon-social { 
-  fill: #404bbf;
+
+.social-item {
+  width: 40px;
+  height: 40px;
+}
+
+.social-link {
+  width: 100%;
+  height: 100%;
+  background-color: #4d5ae5;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.social-link:hover,
+.social-link:focus {
+  background-color: #404bbf;
+}
+.icon-social {
+  fill: #f4f4fd;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
- /* 3 SECTION PORTFOLIO */
+.social-link:hover .icon-social,
+.social-link:focus .icon-social {
+  fill: #ffffff;
+}
+
+/* 4 SECTION PORTFOLIO */
 
 .portfolio-section {
     background-color: #ffffff;
@@ -402,6 +449,31 @@ background-color: #404bbf;
   bottom: 0;
 }
 
+.portfolio-thumb {
+  position: relative;
+  overflow: hidden;
+}
+
+.portfolio-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 40px 32px;
+  background-color: #4d5ae5;
+  color: #f4f4fd;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  transform: translateY(100%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.portfolio-item:hover .portfolio-overlay {
+  transform: translateY(0%);
+}
+
 .card-content {
   padding: 32px 16px;
     border: 1px solid #e7e9fc;
@@ -437,6 +509,17 @@ background-color: #404bbf;
     padding: 100px 0;
 }
 
+.footer-container {
+  display: flex;
+  align-items: baseline;
+  gap: 120px;
+}
+
+
+.footer-brand {
+  max-width: 264px;
+}
+
 .footer-logo {
     display: inline-block;
     margin-bottom: 16px;
@@ -461,20 +544,48 @@ background-color: #404bbf;
     letter-spacing: 0.02em;
     color: #fff;
 }
+ 
+.footer-social {
+  display: flex;
+  flex-direction: column;
+}
+
+.social-title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+  margin-bottom: 16px;
+}
+
+.social-list {
+  display: flex;
+  gap: 16px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.social-item {
+  width: 40px;
+  height: 40px;
+}
+
 .social-link {
-  display: inline-block;
+  display: flex;
   background-color: #4d5ae5;
   border-radius: 50%;
-  padding: 8px;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-   color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-   fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
-   box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-link:hover,
 .social-link:focus {
-  background-color: #404bbf;
+  background-color: #31d0aa;
 }
 
 .icon-social {
