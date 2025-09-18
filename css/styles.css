@@ -178,10 +178,7 @@ background-color: #404bbf;
     position: relative;
     }
 
-/* .hero-bg {
-   
-}  */
-.hero-conteiner {
+ .hero-conteiner {
     position: relative;
     z-index: 1;
 }
@@ -192,35 +189,31 @@ background-color: #404bbf;
     letter-spacing: 0.02em;
     text-align: center;
     color: #fff;
-    max-width: 496px;
+    /* max-width: 496px; */
     margin: 0 auto 48px;
     position: relative;
 }
 
 .hero-button {
-    display: block;
-    margin: 0 auto;
-    min-width: 169px;
-    height: 56px;
-    border: none;
-    border-radius: 4px;
-    background-color: #4d5ae5;
-    color: #fff;
+    font-family: inherit;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.04em;
+    color: #fff;
+    background-color: #4d5ae5;
+    border: none;
+    border-radius: 4px;
+    padding: 16px 32px;
     cursor: pointer;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-     background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-     fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
-     box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+ 
 .hero-button:hover,
 .hero-button:focus {
     background-color: #404bbf;
 }
+
  /* 2 SECTION FEATURES */ 
 
 .features-section {
@@ -230,6 +223,8 @@ background-color: #404bbf;
 .features-list {
     display: flex;
     gap: 24px;
+    /* flex-wrap: wrap;
+    justify-content: center; */
 }
 
 .feature-item {
@@ -255,8 +250,13 @@ background-color: #404bbf;
     height: 64px;
     margin-bottom: 32px;
     fill: #4d5ae5;
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    /* transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1); */
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .feature-item:hover .feature-icon,
 .feature-item:focus .feature-icon {
   background-color: #404bbf;
@@ -314,16 +314,17 @@ background-color: #404bbf;
     display: flex;
     gap: 24px;
     justify-content: space-between;
+    flex-wrap: nowrap;
 }
 
 .team-card {
     background-color: #ffffff;
     text-align: center;
     border-radius: 0 0 4px 4px;
-    box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.08),
-              0px 1px 1px rgba(0, 0, 0, 0.16),
-              0px 1px 6px rgba(0, 0, 0, 0.08);
-    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+            0px 1px 1px rgba(46, 47, 66, 0.16),
+            0px 2px 1px rgba(46, 47, 66, 0.08);
+ transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
 .team-card:hover,
 .team-card:focus {
@@ -359,19 +360,16 @@ background-color: #404bbf;
     color: #434455;
     text-align: center;
 }
-.social-list {
-    margin-top: 24px;
+ .social-list {
     display: flex;
     justify-content: center;
-    gap: 16px;
+    gap: 24px;
     padding: 0;
+    margin-top: 24px;
     margin: 0;
     list-style: none;
-    /* transition:  250ms cubic-bezier(0.4, 0, 0.2, 1),
-     background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-     fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
-     box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1); */
-}
+    transition:  250ms cubic-bezier(0.4, 0, 0.2, 1);
+ }
 
 .social-item {
   width: 40px;
@@ -392,12 +390,12 @@ background-color: #404bbf;
 .social-link:focus {
   background-color: #404bbf;
 }
-.icon-social {
+.icon {
   fill: #f4f4fd;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.social-link:hover .icon-social,
-.social-link:focus .icon-social {
+.social-link:hover .icon,
+.social-link:focus .icon {
   fill: #ffffff;
 }
 
@@ -515,7 +513,6 @@ background-color: #404bbf;
   gap: 120px;
 }
 
-
 .footer-brand {
   max-width: 264px;
 }
@@ -523,8 +520,8 @@ background-color: #404bbf;
 .footer-logo {
     display: inline-block;
     margin-bottom: 16px;
-    font-family: "Raleway", sans-serif;
-    font-weight: 700;
+    /* font-family: "Raleway", sans-serif;
+    font-weight: 700; */
     font-size: 18px;
     line-height: 1.17;
     letter-spacing: 0.03em;
@@ -568,6 +565,7 @@ background-color: #404bbf;
 }
 
 .social-item {
+    fill: var(--iris);
   width: 40px;
   height: 40px;
 }
@@ -588,11 +586,11 @@ background-color: #404bbf;
   background-color: #31d0aa;
 }
 
-.icon-social {
+.icon {
   fill: #f4f4fd;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.social-link:hover .icon-social,
-.social-link:focus .icon-social {
+.social-link:hover .icon,
+.social-link:focus .icon {
   fill: #ffffff;
 }
