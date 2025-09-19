@@ -246,8 +246,7 @@ background-color: #404bbf;
     height: 64px;
     margin-bottom: 32px;
     fill: #4d5ae5;
-    /* transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1); */
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
         background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
         fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
         box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -393,7 +392,7 @@ background-color: #404bbf;
     padding: 120px 0;
 }
 
-.portfolio-conteiner {
+.portfolio-container {
     position: relative;
     overflow: hidden; 
 }
@@ -434,8 +433,8 @@ background-color: #404bbf;
 
 .portfolio-item:hover {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
-  0px 1px 1px rgba(46, 47, 66, 0.16), 
-  0px 2px 1px rgba(46, 47, 66, 0.08);
+              0px 1px 1px rgba(46, 47, 66, 0.16), 
+              0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .card-content::before {
@@ -453,17 +452,10 @@ background-color: #404bbf;
 .portfolio-item:hover .card-content::before {
   bottom: 0;
 }
-
-.portfolio-thumb {
-  position: relative;
-  overflow: hidden;
-}
-
-
-
+ 
 .portfolio-item:hover .portfolio-overlay {
   transform: translateY(0%);
-}
+  }
 
 .card-content {
   padding: 32px 16px;
@@ -472,11 +464,18 @@ background-color: #404bbf;
   position: relative;
   z-index: 2;
 }
-.portfolio-item img {
+
+.portfolio-thumb {
+  position: relative;
+  overflow: hidden;
+}
+
+.portfolio-thumb img {
     object-fit: cover;
     display: block;
     width: 100%;
 }
+
 .card-title {
     font-weight: 500;
     font-size: 20px;
@@ -503,12 +502,13 @@ background-color: #404bbf;
 .footer-container {
   display: flex;
   align-items: baseline;
-  /* gap: 120px; */
+  justify-content: space-between;
+  gap: 120px;
 }
 
 .footer-brand {
   max-width: 264px;
-  margin-right: 120px;
+  /* margin-right: 120px; */
 }
 
 .footer-logo {
@@ -522,8 +522,7 @@ background-color: #404bbf;
     text-transform: uppercase;
     color: #4d5ae5;
     text-decoration: none;
-    display: inline-block;
-}
+ }
 
 .footer-logo .logo-part {
     color: var(--footer-color);
@@ -542,7 +541,7 @@ background-color: #404bbf;
 .social-conteiner {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  /* align-items: flex-start; */
 }
 
 .social-title {
@@ -587,7 +586,4 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   fill: #f4f4fd;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.social-link:hover .icon,
-.social-link:focus .icon {
-  fill: #ffffff;
-}
+
