@@ -217,10 +217,8 @@ background-color: #404bbf;
 }
 
 .features-list {
-    display: flex;
-    gap: 24px;
-    /* flex-wrap: wrap;
-    justify-content: center; */
+  display: flex;
+  gap: 24px;
 }
 
 .feature-item {
@@ -305,20 +303,30 @@ background-color: #404bbf;
     padding-bottom: 120px;
 }
 
+.section-title{
+font-family: var(--font-family);
+font-size: 36px;
+line-height: 111%;
+letter-spacing: 0.02em;
+text-align: center;
+color: var(--navy-blue);
+}
+
 .team-list {
-    display: flex;
-    gap: 24px;
-    justify-content: space-between;
-    flex-wrap: nowrap;
+ display: flex;
+ gap: 24px;
+ justify-content: space-between;
+ flex-wrap: nowrap;
 }
 
 .team-card {
-    background-color: #ffffff;
-    text-align: center;
-    border-radius: 0 0 4px 4px;
-    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
-            0px 1px 1px rgba(46, 47, 66, 0.16),
-            0px 2px 1px rgba(46, 47, 66, 0.08);
+ background-color: #ffffff;
+ text-align: center;
+ padding: 0px 0px 32px;
+ border-radius: 0 0 4px 4px;
+ box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+             0px 1px 1px rgba(46, 47, 66, 0.16),
+             0px 2px 1px rgba(46, 47, 66, 0.08);
  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -360,30 +368,33 @@ background-color: #404bbf;
   }
     
 .social-item {
-  width: 40px;
-  height: 40px;  
+ width: 100%;
+ height: 100%;
+ background-color: #4d5ae5;
+ border-radius: 50%;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ gap: 24px;
+ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 }
 
 .social-link {
-  width: 100%;
-  height: 100%;
-  background-color: #4d5ae5;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 24px;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+ width: 40px;
+ height: 40px;
+ position: relative;
 }
-  
+
+.icon {
+  fill: #f4f4fd;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+} 
+
 .social-link:hover,
 .social-link:focus {
   background-color: #404bbf;
 }
-.icon {
-  fill: #f4f4fd;
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+
  
 /* 4 SECTION PORTFOLIO */
 
@@ -397,7 +408,15 @@ background-color: #404bbf;
     overflow: hidden; 
 }
 
-
+.section-title {
+    font-family: var(--font-family);
+font-weight: 700;
+font-size: 36px;
+line-height: 111%;
+letter-spacing: 0.02em;
+text-align: center;
+color: var(--navy-blue);
+}
 
 .portfolio-list {
     display: flex;
@@ -452,7 +471,7 @@ background-color: #404bbf;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.portfolio-item:hover .portfolio-overlay {
+.portfolio-overlay:hover {
   transform: translateY(0%);
   }
 
