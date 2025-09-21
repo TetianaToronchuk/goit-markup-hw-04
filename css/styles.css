@@ -380,8 +380,8 @@ color: var(--navy-blue);
  justify-content: center;
  
 }
-.social-item:hover .social-link,
-.social-link:focus {
+.social-item:hover .social-icon
+.social-icon:focus {
  background-color: #404bbf;
 }
 
