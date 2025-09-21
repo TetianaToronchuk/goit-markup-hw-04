@@ -174,7 +174,7 @@ background-color: #404bbf;
     position: relative;
     }
 
- .hero-conteiner {
+ .hero-container {
     position: relative;
     z-index: 1;
 }
@@ -336,11 +336,11 @@ color: var(--navy-blue);
     width: 100%;
 }
 
-.card-info {
+.team-card-info {
     padding: 32px 0;
 }
 
-.card-name {
+.team-card-name {
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
@@ -350,7 +350,7 @@ color: var(--navy-blue);
     margin-bottom: 8px;
 }
 
-.card-role {
+.team-card-role {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
@@ -381,7 +381,7 @@ color: var(--navy-blue);
  
 }
 .social-item:hover .social-link,
-.social-item:focus .social-link {
+.social-link:focus {
  background-color: #404bbf;
 }
 
@@ -418,6 +418,7 @@ color: var(--navy-blue);
     justify-content: center;
     row-gap: 48px;
     column-gap: 24px;
+    position: relative;
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 } 
 
@@ -468,7 +469,7 @@ color: var(--navy-blue);
   transform: translateY(0%);
   }
 
-.card-content::before {
+.portfolio-card-content::before {
   content: "";
   position: absolute;
   bottom: -100%;
@@ -484,7 +485,7 @@ color: var(--navy-blue);
   bottom: 0;
 }
 
-.card-content {
+.portfolio-card-content {
   padding: 32px 16px;
     border: 1px solid #e7e9fc;
     border-top: none;  
@@ -492,7 +493,7 @@ color: var(--navy-blue);
   z-index: 2;
 }
  
-.card-title {
+.portfolio-card-title {
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
@@ -502,7 +503,7 @@ color: var(--navy-blue);
     /* ✅ відступ до параграфа */
 }
 
-.card-text {
+.portfolio-card-text {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
@@ -554,7 +555,7 @@ color: var(--navy-blue);
 }
  
 
-.social-conteiner {
+.social-container {
   display: flex;
   flex-direction: column;
  }
@@ -594,7 +595,7 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-item:hover .social-link,
-.social-item:focus .social-link {
+.social-link:focus {
   background-color: #31d0aa;
 }
 
