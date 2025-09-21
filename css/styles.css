@@ -344,7 +344,7 @@ color: var(--navy-blue);
     text-align: center;
     margin-bottom: 16px;
 }
- .social-list {
+ .social-list-team {
   display: flex;
   gap: 24px;
   padding: 0;
@@ -542,7 +542,7 @@ color: var(--navy-blue);
   margin-bottom: 16px;
 }
  
-.social-list {
+.social-list-footer {
   display: flex;
   gap: 16px;
   padding: 0;
