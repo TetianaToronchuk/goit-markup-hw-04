@@ -355,8 +355,7 @@ color: var(--navy-blue);
 .social-item-team {
  width: 40px;
  height: 40px;
- background-color: 250ms cubic-bezier(0.4, 0, 0.2, 1); 
- }
+}
 
 .social-link-team {
  width: 100%;
@@ -366,9 +365,9 @@ color: var(--navy-blue);
  display: flex;
  align-items: center;
  justify-content: center;
- 
+ background-color: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.social-item:hover .social-link-team,
+.social-item-team:hover .social-link-team,
 .social-link-team:focus {
  background-color: #404bbf;
 }
