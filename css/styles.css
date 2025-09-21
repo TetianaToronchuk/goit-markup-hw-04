@@ -361,8 +361,7 @@ color: var(--navy-blue);
  .social-list {
   display: flex;
   justify-content: center;
-  gap: 24px;
-  list-style: none;
+   gap: 24px;
   }
     
 .social-item {
@@ -381,8 +380,8 @@ color: var(--navy-blue);
  justify-content: center;
  
 }
-.social-link:hover,
-.social-link:focus {
+.social-item:hover .social-link,
+.social-item:focus .social-link {
  background-color: #404bbf;
 }
 
