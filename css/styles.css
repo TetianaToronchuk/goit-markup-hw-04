@@ -369,10 +369,11 @@ color: var(--navy-blue);
  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.social-item-team:hover .social-link-team,
+.social-link-team:focus {
+  background-color: #404bbf;  
+}
 
-/* .social-item-team.social-link-team {
- 
-} */
 
  .icon {
   fill: #f4f4fd;
